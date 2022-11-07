@@ -1,0 +1,102 @@
+:root {
+    --primary_color: #173C66;
+    --primary_font_size: 12px
+}
+
+/*general*/
+* {
+    font-size: var(--primary_font_size);
+}
+
+.login-page {
+    height: 100vh;
+}
+
+/*left login page*/
+.login-input-group {
+    position: relative;
+}
+.login-input-group input {
+    border-radius: unset;
+    height: 3.75rem;
+    padding-right: 2.5rem;
+
+}
+.login-input-group img {
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+}
+
+.btn {
+    border-radius: unset;
+    border-top: none;
+    height: 3.4375rem;
+    color: var(--primary_color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.login-btn {
+    background: linear-gradient(180deg, #F0F6FD 0%, #D0E5FA 100%);
+
+}
+.login-btn:hover {
+    background: #D0E5FA
+}
+
+.not-member-btn {
+    background: linear-gradient(180deg, #FFFFFF 0%, #EFEFEF 100%);
+}
+.not-member-btn:hover {
+    background: #EFEFEF;
+}
+
+/*right login page*/
+.right-login-page {
+    position: relative;
+}
+
+.right-login-page-area {
+    background: linear-gradient(180deg, rgba(240, 246, 253, 0.9) 0%, rgba(208, 229, 250, 0.9) 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: var(--primary_color);
+}
+.right-login-page-area h3 {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 46px;
+}
+.right-login-page-area h1 {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 131px;
+}
+.right-login-page-area p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+/*responsive custom*/
+@media only screen and (max-width: 600px) {
+    .right-login-page {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .right-login-page {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
